@@ -23,7 +23,7 @@ const getBankAccounts = async (req, res) => {
 
 const getBankAccount = async (req, res) => {
   const uid = req.params.id;
-  const BankAccount = await Account.findById(uid);
+  const BankAccount = await Account.find({userId:uid});
 
   res.json({
     ok: true,

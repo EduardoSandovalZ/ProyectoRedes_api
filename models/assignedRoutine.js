@@ -21,7 +21,7 @@ const AssignedRoutineSchema = Schema(
       ref: 'User',
       required: true,
     },
-    userName: {
+    email: {
       type: String,
     },
     routineName: {
