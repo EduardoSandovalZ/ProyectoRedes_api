@@ -236,7 +236,9 @@ const createTransaction = async (req, res = response) => {
 
     // Actualizar el saldo de la cuenta bancaria según el tipo de transacción
     existingBankAccount.balance -= ammount;
+    console.log(existingBankAccount.balance)
     existingTargetAccountId.balance += ammount;
+    console.log(existingTargetAccountId.balance)
 
     // if (transactionType === 'deposit') {
     //   // ?Deposito
